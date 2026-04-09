@@ -62,7 +62,7 @@ export default function App() {
         title="Apdailos darbai"
         subtitle="Kokybiška vidaus apdaila — jūsų namų pabaiga."
         description="Atliekame visų tipų vidaus apdailos darbus gyvenamosios ir komercinės paskirties objektuose. Naudojame tik aukštos kokybės medžiagas ir modernius apdailos sprendimus."
-        image="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=2069"
+        image="/apdaila.jpg"
         services={apdailosServices}
         imagePosition="left"
         dark={false}

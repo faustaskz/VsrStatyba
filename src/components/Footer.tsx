@@ -1,3 +1,4 @@
+
 const navLinks = [
   { name: 'Apie mus', href: '#apie-mus' },
   { name: 'Statyba', href: '#statyba' },
@@ -14,9 +15,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 text-center lg:text-left">
           {/* Left Column */}
           <div className="space-y-8 md:space-y-12">
-            <a href="#" className="text-2xl md:text-3xl font-display font-black tracking-tighter flex items-center justify-center lg:justify-start gap-2">
-              <span className="text-brand-accent">VG</span>
-              <span>STATYBA</span>
+            <a href="#" className="flex items-center justify-center lg:justify-start">
+              <img src="/VGStatybalogooo.png" alt="VG Statyba" className="h-20 md:h-28 w-auto" />
             </a>
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 md:gap-x-8 gap-y-4">
