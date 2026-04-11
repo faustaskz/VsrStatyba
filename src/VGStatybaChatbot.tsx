@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 
-const ANTHROPIC_API_KEY = "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";
+const ANTHROPIC_API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
 
 const SYSTEM_PROMPT = `Esi UAB VG STATYBA klientų aptarnavimo asistentas. Atsakinėk trumpai, taisyklinga lietuvių kalba, be emojių, profesionaliai. Max 2 sakiniai. Niekada nerašyk angliškai. Paslaugos: statyba, apdailos darbai, konsultavimas. Kontaktai: tel. +370 672 95845, el. p. vgstatyba@gmail.com, Šilo g. 5 Vilnius. Jei klausia kainos - sakyk kad priklauso nuo projekto ir kvieski susisiekti.`;
 
