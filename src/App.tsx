@@ -10,6 +10,7 @@ import ServiceSection from './components/ServiceSection';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import VGStatybaChatbot from './VGStatybaChatbot';
 
 const statybaServices = [
   { title: 'Bendrieji statybos darbai', description: 'Kompleksiniai statybos darbai nuo žemės kasimo iki stogo uždengimo pagal visus statybos normatyvus.' },
@@ -82,6 +83,7 @@ export default function App() {
       <Certificates />
       <Contact />
       <Footer />
+      <VGStatybaChatbot />
     </div>
   );
 }
