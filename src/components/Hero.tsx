@@ -17,9 +17,9 @@ export default function Hero() {
           <source src="/hero.mp4" type="video/mp4" />
         </video>
         {/* Dark overall overlay */}
-        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.5)' }}></div>
+        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.3)' }}></div>
         {/* Dark gradient overlay on the left where text sits */}
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/60 to-transparent"></div>
       </div>
 
       {/* Interactive Particle Background */}
