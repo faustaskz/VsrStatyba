@@ -47,7 +47,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <About />
-      
+
       <ServiceSection
         id="statyba"
         title="Statyba"
@@ -87,4 +87,3 @@ export default function App() {
     </div>
   );
 }
-

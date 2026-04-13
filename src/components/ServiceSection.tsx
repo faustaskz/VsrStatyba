@@ -37,7 +37,7 @@ export default function ServiceSection({
     >
       <div className="max-w-7xl mx-auto">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center`}>
-          
+
           {/* Content Column */}
           <div className={imagePosition === 'left' ? 'lg:order-2' : 'lg:order-1'}>
             <motion.div
@@ -47,7 +47,7 @@ export default function ServiceSection({
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-2xl md:text-[38px] uppercase mb-4 tracking-tighter">{title}</h2>
-              <h3 className={`text-base md:text-lg font-bold uppercase tracking-widest mb-6 md:mb-8 ${dark ? 'text-brand-red' : 'text-brand-red'}`}>
+              <h3 className={`text-base md:text-lg font-bold uppercase tracking-widest mb-6 md:mb-8 text-brand-accent`}>
                 {subtitle}
               </h3>
               <p className={`text-sm md:text-[16px] leading-relaxed mb-8 md:mb-12 ${dark ? 'text-white/70' : 'text-brand-dark/70'}`}>
@@ -66,7 +66,7 @@ export default function ServiceSection({
                     onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
                     className="w-full py-4 md:py-6 flex justify-between items-center text-left group min-h-[48px]"
                   >
-                    <span className="text-base md:text-lg font-bold uppercase tracking-wide group-hover:text-brand-red transition-colors">
+                    <span className="text-base md:text-lg font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">
                       {service.title}
                     </span>
                     <ChevronDown
@@ -102,7 +102,7 @@ export default function ServiceSection({
             transition={{ duration: 0.8 }}
             className={`relative aspect-[4/5] ${imagePosition === 'left' ? 'lg:order-1' : 'lg:order-2'} ${imagePosition === 'left' ? 'order-first lg:order-1' : 'order-first lg:order-2'}`}
           >
-            <div className={`absolute inset-0 border-2 ${dark ? 'border-brand-red/30' : 'border-brand-red/20'} translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 -z-10`}></div>
+            <div className={`absolute inset-0 border-2 ${dark ? 'border-brand-accent/30' : 'border-brand-accent/20'} translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 -z-10`}></div>
             <img
               src={image}
               alt={title}

@@ -34,7 +34,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <img src="/VGStatybalogooo.png" alt="VG Statyba" className="h-20 w-auto" />
+          <img src="/VSR Statyba logo.png" alt="VSR Statyba" className="h-20 w-auto" />
         </a>
 
         {/* Desktop Nav */}

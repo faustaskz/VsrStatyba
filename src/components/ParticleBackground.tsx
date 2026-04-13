@@ -41,7 +41,7 @@ export default function ParticleBackground() {
       draw(ctx: CanvasRenderingContext2D) {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = '#B8860B'; // Golden color
+        ctx.fillStyle = '#3D6DB5';
         ctx.fill();
       }
     }

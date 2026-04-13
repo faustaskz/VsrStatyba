@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"const l = require\\('./node_modules/lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.includes\\('Align'\\) || k.includes\\('Vertical'\\) || k.includes\\('Paint'\\) || k.includes\\('Layout'\\) || k.includes\\('Tree'\\)\\)\\)\")",
+      "Bash(node -e \"const l = require\\('./node_modules/lucide-react'\\); const icons = ['AlignVerticalSpaceAround','PaintBucket','LayoutGrid','TreePine','HardHat','Paintbrush','Layout']; icons.forEach\\(i => console.log\\(i, !!l[i]\\)\\)\")",
+      "Bash(npm run:*)",
+      "Bash(ffmpeg -version)",
+      "Bash(where ffmpeg:*)",
+      "Bash(where handbrake:*)",
+      "Bash(where ffprobe:*)",
+      "Bash(cmd.exe /c \"where ffmpeg\")",
+      "Bash(cmd.exe /c \"where ffmpeg 2>&1 & echo --- & dir /s /b \\\\\"C:\\\\Program Files\\\\ffmpeg*\\\\\" 2>&1 & dir /s /b \\\\\"C:\\\\ffmpeg*\\\\\" 2>&1 & dir /s /b \\\\\"%USERPROFILE%\\\\ffmpeg*\\\\\" 2>&1\")",
+      "Bash(cmd.exe /c \"dir /s /b C:\\\\ffmpeg.exe C:\\\\\\\\\"ffmpeg\\\\\\\\\" 2>&1 | findstr ffmpeg\")",
+      "Bash(/c/Users/faust/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe -i /c/Users/faust/VsrStatyba/public/vsrstatybaherovid.mp4 -vcodec libx264 -crf 28 -preset slow -vf scale=1280:-2 -movflags +faststart -an /c/Users/faust/VsrStatyba/public/vsrstatybaherovid_compressed.mp4)",
+      "Bash(/c/Users/faust/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe -i /c/Users/faust/VsrStatyba/public/vsrstatybaherovid_compressed.mp4 -t 16 -c copy /c/Users/faust/VsrStatyba/public/vsrstatybaherovid_16s.mp4)"
+    ]
+  }
+}

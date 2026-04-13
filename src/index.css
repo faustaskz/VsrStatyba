@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,9 +6,9 @@
   --font-display: "Space Grotesk", sans-serif;
   
   --color-brand-dark: #1A1A1A;
-  --color-brand-accent: #B8860B;
-  --color-brand-accent-light: #C9A84C;
-  --color-brand-red: #C0392B;
+  --color-brand-accent: #3D6DB5;
+  --color-brand-accent-light: #5285C8;
+  --color-brand-red: #3D6DB5;
   --color-brand-offwhite: #F5F5F5;
 }
 

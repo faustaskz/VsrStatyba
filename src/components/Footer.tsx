@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Left Column */}
           <div className="space-y-8 md:space-y-12">
             <a href="#" className="flex items-center justify-center lg:justify-start">
-              <img src="/VGStatybalogooo.png" alt="VG Statyba" className="h-20 md:h-28 w-auto" />
+              <img src="/VSR Statyba logo.png" alt="VSR Statyba" className="h-20 md:h-28 w-auto" />
             </a>
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 md:gap-x-8 gap-y-4">
@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs md:text-sm text-white/30">
-              © 2026 VG Statyba. Visos teisės saugomos.
+              © 2026 VSR Statyba. Visos teisės saugomos.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="lg:text-right space-y-6 md:space-y-8">
             <h4 className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-brand-red font-bold">Rekvizitai</h4>
             <div className="space-y-2 text-xs md:text-sm text-white/60">
-              <p>UAB „VG STATYBA"</p>
+              <p>UAB „VSR STATYBA"</p>
               <p>Įmonės kodas: 300867894</p>
               <p>PVM kodas: LT100003753419</p>
               <p>A/S: LT15 4010 0424 0391 5513</p>

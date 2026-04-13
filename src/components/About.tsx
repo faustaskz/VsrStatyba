@@ -26,10 +26,10 @@ export default function About() {
             <div className="text-[6rem] md:text-[10rem] font-display font-black leading-none opacity-5 select-none">
               EST.
             </div>
-            <div className="text-5xl md:text-7xl font-display font-black leading-none text-brand-red mt-[-2rem] md:mt-[-3rem]">
+            <div className="text-5xl md:text-7xl font-display font-black leading-none text-brand-accent mt-[-2rem] md:mt-[-3rem]">
               2007
             </div>
-            <div className="mt-8 md:mt-12 border-l-4 border-brand-red pl-6 md:pl-8 py-4">
+            <div className="mt-8 md:mt-12 border-l-4 border-brand-accent pl-6 md:pl-8 py-4">
               <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-brand-dark/50">
                 Sąžiningumas • Pareigingumas • Kokybė
               </p>
@@ -45,13 +45,13 @@ export default function About() {
             className="space-y-6 md:space-y-8"
           >
             <p className="text-sm md:text-[16px] leading-relaxed font-medium">
-              2007 m. birželio 6 d. buvo įkurta įmonė UAB „VG STATYBA", kuri savo veiklą vykdo vadovaudamasi sąžingumo ir pareigingumo principais. Įmonės įkūrimui įtakos turėjo statybos rinkos pagyvėjimas Lietuvoje.
+              UAB „VSR Statyba" specializuojasi apdailos, tinkavimo, fasadų šiltinimo, individualių namų statybos, gerbūvio, žemės darbų, stogų įrengimo ir renovavimo srityse.
             </p>
             <p className="text-xs md:text-[15px] leading-relaxed text-brand-dark/70">
-              Nuo įmonės įkūrimo pradžios, UAB „VG STATYBA" pagrindinis tikslas buvo įsiskverbti į Lietuvos statybos rinką smulkiųjų ir vidutinių įmonių sektoriuje. Tai padaryti galima buvo tik laiku ir kokybiškai atliekant darbus, įgyjant ne tik klientų, bet ir partnerių pasitikėjimą.
+              Kreipkitės į UAB „VSR Statyba" įmonės darbuotojus, kurie profesionaliai, kokybiškai ir visapusiškai padės įgyvendinti Jūsų sumanymus, garantuos kokybę, pasiūlys palankiausią atsiskaitymo variantą, bus visada Jums dėmesingi ir paslaugūs.
             </p>
             <p className="text-xs md:text-[15px] leading-relaxed text-brand-dark/70 italic border-l-2 border-brand-accent/30 pl-4 md:pl-6">
-              UAB „VG STATYBA" vizija – įgyvendinti idėjas, susijusias su naujų namų statymu, pastatytų objektų renovavimu, apdailos darbais. Misija – sukurti saugius, jaukius namus kiekvienam, kuriam svarbus jaukus „namų židinys".
+              Įgyvendinkite savo idėjas kartu su UAB „VSR Statyba" komanda. Dirbame vadovaudamiesi sąžingumo ir pareigingumo principais, užtikrinant aukščiausią kokybę kiekviename etape.
             </p>
           </motion.div>
         </div>
@@ -69,7 +69,7 @@ export default function About() {
               <div className="text-[32px] md:text-[48px] font-display font-black text-brand-dark mb-1 md:mb-2">
                 {stat.value}
               </div>
-              <div className="text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold text-brand-red">
+              <div className="text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold text-brand-accent">
                 {stat.label}
               </div>
             </motion.div>

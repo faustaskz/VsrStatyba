@@ -14,43 +14,37 @@ export default function Hero() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/vsrstatybaherovid_16s.mp4" type="video/mp4" />
         </video>
         {/* Dark overall overlay */}
         <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.3)' }}></div>
-        {/* Dark gradient overlay on the left where text sits */}
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/60 to-transparent"></div>
+        {/* Dark gradient overlay — center fade */}
+        <div className="absolute inset-0 bg-brand-dark/50"></div>
       </div>
 
       {/* Interactive Particle Background */}
       <ParticleBackground />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full">
-        <div className="max-w-3xl">
-          {/* Vertical Accent Line (Red) */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="w-1 h-12 md:h-16 bg-brand-red mb-6 md:mb-8"
-          />
-
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-            className="text-[32px] md:text-[52px] font-display font-black uppercase leading-[1.1] tracking-tighter mb-6"
-          >
-            Statyba.<br />
-            Renovacija.<br />
-            Apdailos darbai.
-          </motion.h1>
+      <div className="relative z-10 max-w-4xl mx-auto w-full text-center flex flex-col items-center">
+          <h1 className="text-[40px] md:text-[64px] uppercase leading-[1.0] tracking-tighter mb-6" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 600 }}>
+            {['Statyba.', 'Renovacija.', 'Apdailos darbai.'].map((line, i) => (
+              <motion.span
+                key={line}
+                initial={{ opacity: 0, x: -40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 + i * 0.25 }}
+                className="block"
+              >
+                {line}
+              </motion.span>
+            ))}
+          </h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.9 }}
             className="text-sm md:text-[16px] font-light text-white/70 max-w-xl mb-10 tracking-wide"
           >
             Aukščiausios kokybės statybos sprendimai Vilniuje nuo 2007 metų. Mes kuriame ateities erdves su precizišku tikslumu ir aistra meistriškumui.
@@ -58,16 +52,15 @@ export default function Hero() {
 
           <motion.a
             href="#kontaktai"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 1.1 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block w-full md:w-auto bg-brand-accent hover:bg-brand-accent-light text-brand-dark px-8 py-4 md:py-3 text-sm font-bold uppercase tracking-[0.2em] transition-colors text-center min-h-[48px]"
+            className="inline-block bg-brand-accent hover:bg-brand-accent-light text-white px-10 py-4 text-sm font-bold uppercase tracking-[0.2em] transition-colors min-h-[48px]"
           >
             Susisiekite
           </motion.a>
-        </div>
       </div>
 
       {/* Scroll Indicator */}

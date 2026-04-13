@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 
 const ANTHROPIC_API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
 
-const SYSTEM_PROMPT = `Esi UAB VG STATYBA klientų aptarnavimo asistentas. Atsakinėk trumpai, taisyklinga lietuvių kalba, be emojių, profesionaliai. Max 2 sakiniai. Niekada nerašyk angliškai. Paslaugos: statyba, apdailos darbai, konsultavimas. Kontaktai: tel. +370 672 95845, el. p. vgstatyba@gmail.com, Šilo g. 5 Vilnius. Jei klausia kainos - sakyk kad priklauso nuo projekto ir kvieski susisiekti.`;
+const SYSTEM_PROMPT = `Esi UAB VSR STATYBA klientų aptarnavimo asistentas. Atsakinėk trumpai, taisyklinga lietuvių kalba, be emojių, profesionaliai. Max 2 sakiniai. Niekada nerašyk angliškai. Paslaugos: statyba, apdailos darbai, tinkavimas, fasadų šiltinimas, gerbūvio darbai, stogų įrengimas, renovavimas. Kontaktai: tel. +370 672 95845, el. p. vgstatyba@gmail.com, Šilo g. 5 Vilnius. Jei klausia kainos - sakyk kad priklauso nuo projekto ir kvieski susisiekti.`;
 
 interface Message {
   role: "user" | "assistant";
@@ -15,7 +15,7 @@ export default function VGStatybaChatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Sveiki! Esu VG Statyba asistentas. Kuo galiu padėti? 🏗️",
+      content: "Sveiki! Esu VSR Statyba asistentas. Kuo galiu padėti?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -87,18 +87,18 @@ export default function VGStatybaChatbot() {
         style={{
           position: "fixed", bottom: "24px", right: "24px",
           width: "60px", height: "60px", borderRadius: "50%",
-          backgroundColor: "#D4A017", border: "none", cursor: "pointer",
+          backgroundColor: "#3D6DB5", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
-          boxShadow: "0 4px 20px rgba(212, 160, 23, 0.4)",
+          boxShadow: "0 4px 20px rgba(61, 109, 181, 0.4)",
           zIndex: 9999, transition: "transform 0.2s, box-shadow 0.2s",
         }}
         onMouseEnter={(e) => {
           (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.1)";
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 6px 25px rgba(212, 160, 23, 0.6)";
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 6px 25px rgba(61, 109, 181, 0.6)";
         }}
         onMouseLeave={(e) => {
           (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 20px rgba(212, 160, 23, 0.4)";
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 20px rgba(61, 109, 181, 0.4)";
         }}
       >
         {isOpen ? (
@@ -131,9 +131,9 @@ export default function VGStatybaChatbot() {
             .vg-scroll::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
             .vg-input::placeholder { color: #555; }
             .vg-input:focus { outline: none; }
-            .vg-send:hover:not(:disabled) { background: #e6b020 !important; }
+            .vg-send:hover:not(:disabled) { background: #5285C8 !important; }
             .vg-send:disabled { opacity: 0.4; cursor: not-allowed; }
-            .dot { width: 7px; height: 7px; border-radius: 50%; background: #D4A017;
+            .dot { width: 7px; height: 7px; border-radius: 50%; background: #3D6DB5;
               display: inline-block; animation: bounce 1.2s ease-in-out infinite; }
             .dot:nth-child(2) { animation-delay: 0.2s; }
             .dot:nth-child(3) { animation-delay: 0.4s; }
@@ -148,9 +148,9 @@ export default function VGStatybaChatbot() {
             padding: "16px 20px", borderBottom: "1px solid #2a2a2a",
             display: "flex", alignItems: "center", gap: "12px",
           }}>
-            <img src="/VGStatybalogooo.png" style={{width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}} />
+            <img src="/VSR Statyba logo.png" style={{width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}} />
             <div>
-              <div style={{ color: "#fff", fontWeight: "600", fontSize: "14px" }}>VG Statyba</div>
+              <div style={{ color: "#fff", fontWeight: "600", fontSize: "14px" }}>VSR Statyba</div>
               <div style={{ color: "#4CAF50", fontSize: "12px", display: "flex", alignItems: "center", gap: "5px" }}>
                 <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#4CAF50", display: "inline-block" }} />
                 Online
@@ -168,7 +168,7 @@ export default function VGStatybaChatbot() {
                 <div style={{
                   maxWidth: "80%", padding: "10px 14px",
                   borderRadius: msg.role === "user" ? "16px 16px 4px 16px" : "16px 16px 16px 4px",
-                  backgroundColor: msg.role === "user" ? "#D4A017" : "#2a2a2a",
+                  backgroundColor: msg.role === "user" ? "#3D6DB5" : "#2a2a2a",
                   color: msg.role === "user" ? "#1a1a1a" : "#e0e0e0",
                   fontSize: "13px", lineHeight: "1.5",
                   fontWeight: msg.role === "user" ? "500" : "400",
@@ -215,7 +215,7 @@ export default function VGStatybaChatbot() {
               disabled={isLoading || !input.trim()}
               style={{
                 width: "42px", height: "42px", borderRadius: "10px",
-                background: "#D4A017", border: "none", cursor: "pointer",
+                background: "#3D6DB5", border: "none", cursor: "pointer",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 flexShrink: 0, transition: "background 0.2s",
               }}
